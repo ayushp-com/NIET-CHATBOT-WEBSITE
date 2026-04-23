@@ -4,8 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NIET AI Assistant – Your Campus Companion</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
+    /* 🔥 Chat Button Animation + Size */
+.bpFab {
+  transform: scale(1.15) !important;   /* increase size */
+  animation: chatPulse 1.5s infinite;  /* blinking effect */
+}
+
+/* Pulse animation */
+@keyframes chatPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(0, 212, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0);
+  }
+}
   :root {
     --navy: #0a0e2e;
     --navy2: #0d1340;
@@ -504,7 +522,7 @@
   <a href="#how" class="mobile-link">How it Works</a>
   <a href="#topics" class="mobile-link">Topics</a>
   <a href="#about" class="mobile-link">About</a>
-  
+  <button class="mobile-cta">Start Chatting →</button>
 </div>
 
 <!-- HERO -->
@@ -513,7 +531,8 @@
   <h1>Your Campus<br><span class="highlight">AI Companion</span></h1>
   <p>Get instant answers to every academic, administrative, and campus-life question — anytime, anywhere.</p>
   <div class="hero-btns">
-    
+    <button class="btn-primary">Ask Your First Question →</button>
+    <button class="btn-outline">Explore Features</button>
   </div>
 
   <div class="hero-preview">
